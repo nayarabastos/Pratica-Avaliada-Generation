@@ -17,7 +17,7 @@ public class TestaUsuarios {
 			Usuario u = new Usuario("Nayara","nay@gmail.com");
 			u.visualizar();
 		}catch(Exception e) {
-			System.err.println("Erro: "+e.getMessage());
+			System.out.println("Erro: "+e.getMessage());
 		}
 	}
 	
@@ -27,7 +27,7 @@ public class TestaUsuarios {
 			Administrador a = new Administrador("Nayara","nay@gmail.com","total");
 			a.visualizar();
 		}catch(Exception e) {
-			System.err.println("Erro: "+e.getMessage());
+			System.out.println("Erro: "+e.getMessage());
 		}
 	}
 	
@@ -36,7 +36,7 @@ public class TestaUsuarios {
 		try {
 			new Administrador("","nay@email.com","total");
 		}catch(IllegalArgumentException e) {
-			System.err.println("Erro: "+e.getMessage());
+			System.out.println("Erro: "+e.getMessage());
 		}
 	}
 	
@@ -45,7 +45,7 @@ public class TestaUsuarios {
 		try {
 			new Administrador("Nayara", "emailinvalido", "total"); // email inválido: sem @
 		} catch (IllegalArgumentException e) {
-			System.err.println("Erro: " + e.getMessage());
+			System.out.println("Erro: " + e.getMessage());
 		}
 	}
 
